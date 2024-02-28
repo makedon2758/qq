@@ -349,7 +349,7 @@ h6 {
 .block2__titl {
   font-family: Bebas;
   font-weight: 700;
-  line-height: 80.43%;
+  line-height: 90%;
   text-align: center;
   text-transform: uppercase
 }
@@ -550,10 +550,12 @@ h6 {
 .block4::after {
   content: "";
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: -10%;
+  right: 5%;
   background-repeat: no-repeat;
-  background-size: 465px 380px
+  background-size: 465px 380px;
+  width: 465px;
+  height: 380px
 }
 .block4__container {
   padding-top: 90px;
@@ -682,6 +684,105 @@ h6 {
   text-align: center;
   text-transform: uppercase
 }
+.block5 {
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat
+}
+.no-webp .block5__container {
+  background-image: url(../img/block5/bg-small.png)
+}
+.block5__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-left: 185px;
+  padding-right: 60px
+}
+.block5__left {
+  flex: 0 1 28%
+}
+.block5__right {
+  flex: 0 1 50%
+}
+.block5__right form {
+  width: 300px
+}
+.block5__right form input[type=tel],
+.block5__right form input[type=text] {
+  padding: 22px;
+  background-color: #fff;
+  color: #211a14;
+  border-radius: 10px;
+  line-height: 22px;
+  width: 300px;
+  height: 65px;
+  margin-bottom: 35px
+}
+.block5__right form input[type=checkbox] {
+  width: 20px;
+  height: 20px
+}
+.block5__right form button {
+  position: static;
+  width: 300px;
+  height: 80px;
+  margin-bottom: 35px;
+  border-radius: 10px;
+  box-shadow: 0 16px 80px 0 rgba(226,197,171,.5),0 7px 0 0 #9d7951,inset 0 0 12.8px 0 #fff;
+  background: linear-gradient(124.51deg,#df9964 15%,#ffd8aa 40%,#df9964 65%,#ffd8aa 85%);
+  color: #2e2118;
+  font-family: Bebas;
+  font-size: 33px;
+  font-weight: 800;
+  line-height: 38px;
+  letter-spacing: -4%;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all .3s
+}
+.block5__right form button:hover {
+  box-shadow: none
+}
+.left__block5-top {
+  font-family: Bebas;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 90%;
+  text-align: left;
+  text-transform: uppercase;
+  padding-bottom: 15px
+}
+.left__block5-top span {
+  background: linear-gradient(124.51deg,#df9964,#ffd8aa,#df9964);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent
+}
+.left__block5-centr {
+  line-height: 200%;
+  padding-bottom: 20px
+}
+.left__block5-footer {
+  font-family: Bebas;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 90%;
+  text-align: left;
+  text-transform: uppercase
+}
+.left__block5-footer span {
+  background: linear-gradient(124.51deg,#df9964,#ffd8aa,#df9964);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent
+}
 @media (min-width:37.5em) {
   .menu__icon {
     display: none
@@ -721,6 +822,12 @@ h6 {
   }
   .block2__titl {
     margin-bottom: 14.0625rem
+  }
+  .block5__container {
+    padding-top: 5.625rem
+  }
+  .block5__container {
+    padding-bottom: 5.3125rem
   }
 }
 @media (min-width:70em) {
@@ -787,15 +894,17 @@ h6 {
   }
   .block4::after {
     background-size: 310px 290px;
-    bottom: -3%;
-    right: 10%
+    bottom: -12%;
+    right: -2%;
+    width: 310px;
+    height: 290px
   }
   .block4__container {
     padding-bottom: 50px;
     padding-top: 30px
   }
   .block4__right img {
-    width: 620px;
+    width: 920px;
     height: 525px;
     top: 50%;
     right: 0;
@@ -838,6 +947,11 @@ h6 {
     height: 100px
   }
 }
+@media (max-width:800px) {
+  .block4__right img {
+    width: 620px
+  }
+}
 @media (max-width:680px) {
   .header__contact {
     gap: 50px
@@ -857,7 +971,7 @@ h6 {
   .block4__right img {
     top: 55%;
     height: 360px;
-    width: 460px
+    width: 600px
   }
   .left__block4-timer {
     width: 185px
@@ -872,6 +986,11 @@ h6 {
   .body__timer-hour .timm::after {
     font-size: 30px;
     right: -25%
+  }
+}
+@media (max-width:420px) {
+  .block4__right img {
+    width: 460px
   }
 }
 @media (max-width:48.0625em) {
@@ -1026,7 +1145,9 @@ h6 {
     height: 105px;
     background-size: 135px 105px;
     bottom: 10%;
-    right: 0
+    right: 0;
+    width: 135px;
+    height: 105px
   }
 }
 @media (max-width:37.5em) and (any-hover:none) {
@@ -1081,7 +1202,13 @@ h6 {
     font-size: 2.5rem
   }
   .block2__titl {
-    margin-bottom: 8.125rem
+    margin-bottom: 9.375rem
+  }
+  .block5__container {
+    padding-top: 1.875rem
+  }
+  .block5__container {
+    padding-bottom: 3.4375rem
   }
 }
 @media (min-width:22.5em) and (max-width:76.25em) {
@@ -1175,14 +1302,34 @@ h6 {
       font-size: calc(2.5rem + 2.8125 * (100vw - 22.5rem)/ 53.75)
     }
   }
-  @supports (margin-bottom:clamp(8.125rem ,5.6395348837rem + 11.0465116279vw ,14.0625rem)) {
+  @supports (margin-bottom:clamp(9.375rem ,7.4127906977rem + 8.7209302326vw ,14.0625rem)) {
     .block2__titl {
-      margin-bottom: clamp(8.125rem ,5.6395348837rem + 11.0465116279vw ,14.0625rem)
+      margin-bottom: clamp(9.375rem ,7.4127906977rem + 8.7209302326vw ,14.0625rem)
     }
   }
-  @supports not (margin-bottom:clamp(8.125rem ,5.6395348837rem + 11.0465116279vw ,14.0625rem)) {
+  @supports not (margin-bottom:clamp(9.375rem ,7.4127906977rem + 8.7209302326vw ,14.0625rem)) {
     .block2__titl {
-      margin-bottom: calc(8.125rem + 5.9375 * (100vw - 22.5rem)/ 53.75)
+      margin-bottom: calc(9.375rem + 4.6875 * (100vw - 22.5rem)/ 53.75)
+    }
+  }
+  @supports (padding-top:clamp(1.875rem ,0.3052325581rem + 6.976744186vw ,5.625rem)) {
+    .block5__container {
+      padding-top: clamp(1.875rem ,.3052325581rem + 6.976744186vw ,5.625rem)
+    }
+  }
+  @supports not (padding-top:clamp(1.875rem ,0.3052325581rem + 6.976744186vw ,5.625rem)) {
+    .block5__container {
+      padding-top: calc(1.875rem + 3.75 * (100vw - 22.5rem)/ 53.75)
+    }
+  }
+  @supports (padding-bottom:clamp(3.4375rem ,2.6526162791rem + 3.488372093vw ,5.3125rem)) {
+    .block5__container {
+      padding-bottom: clamp(3.4375rem ,2.6526162791rem + 3.488372093vw ,5.3125rem)
+    }
+  }
+  @supports not (padding-bottom:clamp(3.4375rem ,2.6526162791rem + 3.488372093vw ,5.3125rem)) {
+    .block5__container {
+      padding-bottom: calc(3.4375rem + 1.875 * (100vw - 22.5rem)/ 53.75)
     }
   }
 }
@@ -1205,6 +1352,9 @@ h6 {
 }
 .webp .block4::after {
   background-image: url(../img/block4/shpat.webp)
+}
+.webp .block5__container {
+  background-image: url(../img/block5/bg-small.webp)
 }
 @media (max-width:37.5em) {
   .webp .menu__body {
