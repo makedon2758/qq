@@ -1789,8 +1789,8 @@ button.swiper-pagination-bullet {
   }
   .left__block5-footer::before {
     top: 0;
-    -webkit-transform: translate(0,-25%);
-    transform: translate(0,-25%)
+    -webkit-transform: translate(-15%,-25%);
+    transform: translate(-15%,-25%)
   }
 }
 @media (max-width:600px) {
@@ -1847,8 +1847,8 @@ button.swiper-pagination-bullet {
 }
 @media (max-width:380px) {
   .left__block5-footer::before {
-    -webkit-transform: translate(-15%,-25%);
-    transform: translate(-15%,-25%)
+    -webkit-transform: translate(-25%,-25%);
+    transform: translate(-25%,-25%)
   }
 }
 @media (max-width:48.0625em) {
