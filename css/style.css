@@ -1861,9 +1861,7 @@ button.swiper-pagination-bullet {
   .left__block5-footer::before {
     width: 250px;
     height: 350px;
-    background-size: 250px 350px;
-    -webkit-transform: translate(-10%,0);
-    transform: translate(-10%,0)
+    background-size: 250px 350px
   }
 }
 @media (max-width:37.5em) {
