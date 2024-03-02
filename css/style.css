@@ -1994,6 +1994,9 @@ button.swiper-pagination-bullet {
     padding-top: 0;
     padding-bottom: 70px
   }
+  .block4::before {
+    display: none
+  }
   .block4__container {
     flex-direction: column
   }
