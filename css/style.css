@@ -653,7 +653,6 @@ h6 {
   text-align: center
 }
 .block4 {
-  padding-top: 150px;
   padding-bottom: 150px;
   background-position: center top;
   background-size: cover;
@@ -1723,7 +1722,7 @@ button.swiper-pagination-bullet {
     margin-bottom: 14.0625rem
   }
   .block3__container {
-    padding-bottom: 6.25rem
+    padding-bottom: 9.375rem
   }
   .block5__container {
     padding-top: 5.625rem
@@ -1849,7 +1848,6 @@ button.swiper-pagination-bullet {
     flex: 0 1 30%
   }
   .block4 {
-    padding-top: 100px;
     padding-bottom: 70px
   }
   .block4__container {
@@ -2435,14 +2433,14 @@ button.swiper-pagination-bullet {
       margin-bottom: calc(9.375rem + 4.6875 * (100vw - 22.5rem)/ 53.75)
     }
   }
-  @supports (padding-bottom:clamp(3.125rem ,1.8168604651rem + 5.8139534884vw ,6.25rem)) {
+  @supports (padding-bottom:clamp(3.125rem ,0.5087209302rem + 11.6279069767vw ,9.375rem)) {
     .block3__container {
-      padding-bottom: clamp(3.125rem ,1.8168604651rem + 5.8139534884vw ,6.25rem)
+      padding-bottom: clamp(3.125rem ,.5087209302rem + 11.6279069767vw ,9.375rem)
     }
   }
-  @supports not (padding-bottom:clamp(3.125rem ,1.8168604651rem + 5.8139534884vw ,6.25rem)) {
+  @supports not (padding-bottom:clamp(3.125rem ,0.5087209302rem + 11.6279069767vw ,9.375rem)) {
     .block3__container {
-      padding-bottom: calc(3.125rem + 3.125 * (100vw - 22.5rem)/ 53.75)
+      padding-bottom: calc(3.125rem + 6.25 * (100vw - 22.5rem)/ 53.75)
     }
   }
   @supports (padding-top:clamp(1.875rem ,0.3052325581rem + 6.976744186vw ,5.625rem)) {
