@@ -2184,7 +2184,10 @@ button.swiper-pagination-bullet {
   .footer__bg-text {
     padding-top: 0;
     background: 0 0;
-    height: auto
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center
   }
   .footer__info {
     padding-top: 0;
