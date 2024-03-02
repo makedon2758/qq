@@ -57,7 +57,12 @@
                 bodyLockToggle();
                 document.documentElement.classList.toggle("menu-open");
             }
+            if (e.target.closest(".menu__item") || e.target.closest(".link__order-header") || e.target.closest(".menu__link")) functions_menuClose();
         }));
+    }
+    function functions_menuClose() {
+        bodyUnlock();
+        document.documentElement.classList.remove("menu-open");
     }
     function ssr_window_esm_isObject(obj) {
         return obj !== null && typeof obj === "object" && "constructor" in obj && obj.constructor === Object;
