@@ -229,7 +229,7 @@ h6 {
   align-items: center
 }
 .footer {
-  background-position: center top;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 35px;
@@ -240,10 +240,10 @@ h6 {
   content: "";
   position: absolute;
   width: 100%;
-  height: 100px;
+  height: 150px;
   top: -3%;
-  -webkit-filter: blur(30px);
-  filter: blur(30px);
+  -webkit-filter: blur(60px);
+  filter: blur(60px);
   background: #090807
 }
 .footer .btn-anim {
@@ -321,7 +321,13 @@ h6 {
   display: none
 }
 .left__footer-social {
-  flex: 1 1 auto
+  flex: 1 1 auto;
+  transition: all .3s
+}
+.left__footer-social img:hover {
+  -webkit-transform: scale(1.15);
+  transform: scale(1.15);
+  transition: all .3s
 }
 .info__footer-titl {
   font-size: 20px;
@@ -950,8 +956,8 @@ h6 {
   width: 100%;
   height: 100px;
   top: -3%;
-  -webkit-filter: blur(30px);
-  filter: blur(30px);
+  -webkit-filter: blur(70px);
+  filter: blur(70px);
   background: #090807
 }
 .block6__container {
