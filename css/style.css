@@ -531,10 +531,6 @@ h6 {
   -webkit-transform: translate(10%,-50%);
   transform: translate(10%,-50%)
 }
-.block2__item-img img {
-  -o-object-fit: cover;
-  object-fit: cover
-}
 .block2__item-img p {
   position: absolute;
   background: linear-gradient(124.51deg,#df9964,#ffd8aa,#df9964);
@@ -659,10 +655,6 @@ h6 {
   left: 0;
   -webkit-transform: translate(10%,-50%);
   transform: translate(10%,-50%)
-}
-.block3__item-img img {
-  -o-object-fit: cover;
-  object-fit: cover
 }
 .block3__item-info {
   text-align: center
