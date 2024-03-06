@@ -61,6 +61,7 @@
   font-weight: 700;
   font-style: italic
 }
+
 * {
   padding: 0;
   margin: 0;
@@ -352,7 +353,7 @@ h6 {
 .block1 {
   background-repeat: no-repeat;
   background-position: top right;
-  background-size: cover;
+  background-size: 100% 100%;
   position: relative
 }
 .block1__container {
@@ -568,8 +569,8 @@ h6 {
   content: "";
   position: absolute;
   width: 1159px;
-  height: 1603px;
-  top: -100%;
+  height: 603px;
+  bottom: 100%;
   left: 50%;
   -webkit-transform: translate(-50%,0) rotate(180deg);
   transform: translate(-50%,0) rotate(180deg);
@@ -665,20 +666,6 @@ h6 {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative
-}
-.block4::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  -webkit-transform: translate(-50%,0);
-  transform: translate(-50%,0);
-  -webkit-filter: blur(860px);
-  filter: blur(860px);
-  background: #9b806c;
-  width: 1005.19px;
-  height: 413.45px;
-  z-index: 8
 }
 .block4__container {
   position: relative;
@@ -835,7 +822,7 @@ h6 {
   padding-bottom: 50px
 }
 .no-webp .block5__container {
-  background-image: url(../img/block5/bg-small.png)
+  background-image: url(../img/block5/bg.png)
 }
 .block5__container {
   display: flex;
@@ -2538,7 +2525,7 @@ button.swiper-pagination-bullet {
   background-image: url(../img/block4/shpat.webp)
 }
 .webp .block5__container {
-  background-image: url(../img/block5/bg-small.webp)
+  background-image: url(../img/block5/bg.webp)
 }
 .webp .left__block5-footer::before {
   background-image: url(../img/block5/img-form.webp)
